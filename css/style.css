@@ -9,11 +9,48 @@
   --team-background-color: #f5f4fa;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  display: block;
+}
+
 .main {
   background-color: var(--primery-text-color);
 }
 
+/* top  */
+
+.head-box {
+  display: block;
+  position: absolute;
+  width: 1600px;
+  height: 0px;
+  left: 0px;
+  top: 80px;
+
+  border: 1px solid #ececec;
+}
+
 .top-logo {
+  display: block;
+  margin-right: 97px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -22,6 +59,7 @@
   color: var(--link-color);
   font-family: "Raleway";
   text-decoration: none;
+  padding: 32px 0;
 }
 .top-logo:hover,
 .top-logo:focus {
@@ -41,8 +79,32 @@
 
 /* header  */
 
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+}
+
+.header-list {
+  display: flex;
+  gap: 65px;
+}
+
+.top-list {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
 .top {
   background-color: var(--primery-text-color);
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+  width: 1200px;
+  height: 80px;
 }
 
 .list-link {
@@ -53,6 +115,8 @@
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   list-style-type: none;
+  display: block;
+  padding: 32px 0;
 }
 .list-link:visited {
   color: var(--title-text-color);
@@ -78,6 +142,8 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--link-color);
+  display: block;
+  padding: 32px 0;
 }
 
 .link-current,
@@ -87,7 +153,16 @@
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+/* tel-list  */
+
+.tel-list {
+  display: flex;
+  gap: 50px;
 }
 
 .tel-link {
@@ -103,6 +178,13 @@
 
 .hero {
   background-color: var(--line-background);
+  margin-top: 0;
+  box-sizing: border-box;
+  width: 1600px;
+  height: 600px;
+  text-align: center;
+  align-items: center;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -111,13 +193,14 @@
   font-size: 44px;
   line-height: calc(60 / 44);
   text-align: center;
+  align-items: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-text-color);
 }
 
 .hero-btn {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -130,6 +213,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 
 .hero-btn:hover {
@@ -158,8 +244,19 @@
 
 /* about  */
 
+.about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .about-list {
   list-style: none;
+}
+
+.about-list,
+.about-title {
+  padding: 0;
+  margin: 0;
 }
 
 .about-title {
@@ -170,6 +267,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 9px;
 }
 
 .about-text {
@@ -180,8 +278,19 @@
   color: var(--text-about-color);
 }
 
+.content {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .content-list {
   list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
 }
 
 .content-title {
@@ -192,19 +301,28 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 /* about team  */
 
 .team-list {
   list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team {
   background-color: var(--button-color);
+  padding: 186px 0 94px;
+  margin: 0;
 }
 
-.team-box{
+.team-box {
   background-color: #fff;
 }
 
@@ -216,6 +334,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 .team-names {
@@ -239,9 +358,22 @@
 }
 
 /* footer  */
+.feet {
+  width: 1200px;
+  padding: 60px 0;
+  padding-left: 215px;
+  display: flex;
+  flex-direction: column;
+}
 
 .address-box {
   font-style: normal;
+}
+
+.address-list {
+  margin: 0;
+  padding: 0;
+  gap: 2px;
 }
 
 .address {
@@ -272,6 +404,15 @@
 
 .btn-list {
   list-style: none;
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 8px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .btn-project {
@@ -297,10 +438,17 @@
 
 .titles-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 94px;
+  gap: 30px;
 }
 
-.title-box{
+.title-box {
   background-color: #fff;
+  border: 1px solid #eeeeee;
 }
 
 .titles-name {

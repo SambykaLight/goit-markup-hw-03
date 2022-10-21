@@ -82,9 +82,11 @@ p {
 .container {
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
 }
 
 .header-list {
@@ -105,7 +107,11 @@ p {
   margin: auto 0;
   width: 1200px;
   height: 80px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+
 
 .list-link {
   font-family: "Roboto", sans-serif;
@@ -250,13 +256,9 @@ p {
 }
 
 .about-list {
+  display: flex;
   list-style: none;
-}
-
-.about-list,
-.about-title {
-  padding: 0;
-  margin: 0;
+  gap: 30px;
 }
 
 .about-title {
@@ -279,10 +281,10 @@ p {
 }
 
 .content {
-  display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 94px;
 }
 
 .content-list {
@@ -410,9 +412,9 @@ p {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  gap: 8px;
   padding-top: 94px;
   padding-bottom: 50px;
+  border-radius: 4px;
 }
 
 .btn-project {
@@ -440,10 +442,12 @@ p {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 94px;
-  gap: 30px;
 }
 
 .title-box {

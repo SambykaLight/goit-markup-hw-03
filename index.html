@@ -22,36 +22,41 @@
   </head>
   <body class="main">
     <header class="top">
-      <nav class="top-list">
-        <a href="" class="top-logo">webstudio</a>
-        <ul class="header-list list">
-          <li><a href="" class="list-link-current link">studio</a></li>
-          <li>
-            <a href="./portfolio.html" class="list-link link">portfolio</a>
-          </li>
-          <li><a href="" class="list-link link">contacts</a></li>
-        </ul>
-      </nav>
-      <ul class="tel-list list">
-        <li>
-          <a class="tel-link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="tel-link link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      <div class="header-container container">
+        <nav class="top-list">
+          <a href="" class="top-logo">webstudio</a>
+          <ul class="header-list list">
+            <li><a href="" class="list-link-current link">studio</a></li>
+            <li>
+              <a href="./portfolio.html" class="list-link link">portfolio</a>
+            </li>
+            <li><a href="" class="list-link link">contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header-group">
+          <ul class="tel-list list">
+            <li>
+              <a class="tel-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="tel-link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <div class="head-box"></div>
     <main>
       <section class="hero">
+       <div class="container">
         <h1 class="hero-title">efective solutions for your business</h1>
         <button type="button" class="hero-btn btn">Request our service</button>
+       </div>
       </section>
-      <section class="about">
+      <section class="about section">
         <div class="container">
           <h2 class="visually-hidden">our conditions</h2>
           <ul class="about-list list">
@@ -86,9 +91,9 @@
           </ul>
         </div>
       </section>
-      <section class="content">
+      <section class="content section">
+        <div class="container">
           <h2 class="content-title">what we do</h2>
-          <div class="container">
           <ul class="content-list">
             <li>
               <img
@@ -117,9 +122,9 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team section">
+        <div class="container">
           <h2 class="team-about">our team</h2>
-          <div class="container">
           <ul class="team-list">
             <li class="team-box">
               <img
@@ -128,8 +133,10 @@
                 height="260"
                 alt="Product Designer"
               />
-              <h3 class="team-names">christopher walker</h3>
+              <div class="team-line">
+                <h3 class="team-names">christopher walker</h3>
               <p class="team-position">product designer</p>
+              </div>
             </li>
             <li class="team-box">
               <img
@@ -138,8 +145,10 @@
                 height="260"
                 alt="Frontend Developer"
               />
-              <h3 class="team-names">kylie evans</h3>
+              <div class="team-line">
+                <h3 class="team-names">kylie evans</h3>
               <p class="team-position">frontend developer</p>
+              </div>
             </li>
             <li class="team-box">
               <img
@@ -148,8 +157,10 @@
                 height="260"
                 alt="Marketing"
               />
-              <h3 class="team-names">ryan harris</h3>
+              <div class="team-line">
+                <h3 class="team-names">ryan harris</h3>
               <p class="team-position">marketing</p>
+              </div>
             </li>
             <li class="team-box">
               <img
@@ -158,15 +169,17 @@
                 height="260"
                 alt="UI Designer"
               />
-              <h3 class="team-names">tyler moore</h3>
+              <div class="team-line">
+                <h3 class="team-names">tyler moore</h3>
               <p class="team-position">ui designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="address">
-      <div class="feet">
+      <div class="feet container">
         <a class="top-logo" href="">webstudio</a>
         <address class="address-box">
           <ul class="address-list list">

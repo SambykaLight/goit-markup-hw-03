@@ -91,7 +91,6 @@ img {
 /* header  */
 
 .container {
-  align-items: center;
   padding: 0 15px;
   margin: 0 auto;
   width: 1200px;
@@ -154,8 +153,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--link-color);
   display: block;
-  padding-top: 25px;
-  padding-bottom: 24px;
 }
 
 .link-current,
@@ -190,8 +187,7 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--text-about-color);
-  padding-top: 25px;
-  padding-bottom: 24px;
+ /* padding: 32px 0; */
 }
 
 /* hero  */
@@ -232,12 +228,15 @@ img {
   letter-spacing: 0.06em;
   color: var(--primery-text-color);
   background: var(--link-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  
 }
 
 .hero-btn:hover {
@@ -285,7 +284,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .about-sector {
@@ -304,7 +303,7 @@ img {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  /* padding-bottom: 94px; */
+  padding-bottom: 94px;
 }
 
 .content-list {
@@ -437,7 +436,9 @@ img {
 
 .projects {
   border-top: 1px solid #ececec;
+  padding: 94px 0;
 }
+
 
 .btn {
   font-family: "roboto", sans-serif;
@@ -451,8 +452,6 @@ img {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  /* padding-bottom: 50px; */
 }
 
 .btn-project {
@@ -466,6 +465,8 @@ img {
   color: var(--title-text-color);
   cursor: pointer;
   background: var(--button-color);
+  border-radius: 4px;
+border: none;
 }
 
 .btn-project:hover,
@@ -495,7 +496,6 @@ img {
   --items: 3;
   margin: 0;
   padding: 0;
-  padding-bottom: 94px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -512,6 +512,7 @@ img {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 
 .title-about {
